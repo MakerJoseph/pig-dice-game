@@ -3,6 +3,15 @@ var randomize = function(){
   return Math.floor(Math.random()*6)+1;
 }
 
+//player constructor
+function Player(){
+  this.PlayerName;
+  this.roll = 0;
+  this.tempScore = 0;
+  this.totalScore = 0;
+  this.finalScore = 0;
+}
+
 $(document).ready(function(){
   $('button#dieroll').click(function(event){
     var value = randomize();
