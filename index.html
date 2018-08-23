@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <center><h1>PIG DICE</h1></center>
+    <div class="">
+    <h2>Rules of game:</h2>
+    <ul>
+      <li>A player repeatedly rolls die untill either 1 is rolled or player decides to hold.</li>
+      <li>If a player chooses to hold then it is next players turn and their total is added to their score.</li>
+      <li>Any number other than 1 is added to the total.</li>
+      <li>First player to reach 100 wins!</li>
+    </ul>
+
+    </div>
+    <div class="row">
+
+      <div class="col" id="player1">
+        <h1>Player 1 section</h1>
+        <button type="button" name="button" id="dieroll">Roll Die</button>
+        <button type="button" name="button">Hold</button>
+        <div class="values">
+          <span id="roll">You Rolled: <span class="roll1"></span> </span>
+        </div>
+        <div class="">
+          <span id="roll">Total Score: <span id="roll" class="tot1"></span> </span>
+        </div>
+      </div>
+
+      <div class="col" id="player2">
+        <h1>Player 2 section</h1> PLAYER 2 SECTION
+        <div class="values">
+          <span>Display Player two content here</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>

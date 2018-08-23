@@ -1,0 +1,21 @@
+body{
+  background-color: grey;
+}
+
+.container{
+  background-color: #757c89;
+}
+
+
+#roll{
+  font-weight: bold;
+  font-size: large;
+}
+
+#player1{
+
+}
+
+#player2{
+  float: right;
+}
