@@ -9,7 +9,6 @@ function Player(){
   this.roll = 0;
   this.tempScore = 0;
   this.totalScore = 0;
-  this.finalScore = 0;
 }
 
 Player.prototype.roll1 = function(){
@@ -25,22 +24,17 @@ Player.prototype.roll1 = function(){
 Player.prototype.hold = function(){
   this.totalScore += this.tempSore;
   this.tempSore = 0;
+  alert("Your turn is over!")
+}
+
+Player.prototype.winnerCheck = function (){
+  if(this.totalScore >= 100){
+    alert("Congratulations You Are The Winner!")
+  }
 }
 
 
 $(document).ready(function(){
   $('button#dieroll').click(function(event){
-    var value = randomize();
-    // var tot1 += value;
-    $('.roll1').text(value);
-    // $('.tot1').text(tot1);
-    if(value === 1){
-      alert('Ooops! your turn is over!')
 
-    }
-    else {
-      var temp += value;
-      $('.tot1').text(temp);
-    }
-  });
 });
