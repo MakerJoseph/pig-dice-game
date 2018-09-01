@@ -15,10 +15,16 @@ function Player(){
 Player.prototype.roll1 = function(){
   if(this.roll === 1){
     this.tempScore = 0;
+    alert("Oooops! you rolled a 1, it's next palyer's turn!")
   }
   else{
-    this.tempScore += this.roll
+    this.tempScore += this.roll;
   }
+}
+
+Player.prototype.hold = function(){
+  this.totalScore += this.tempSore;
+  this.tempSore = 0;
 }
 
 
