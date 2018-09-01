@@ -12,6 +12,16 @@ function Player(){
   this.finalScore = 0;
 }
 
+Player.prototype.roll1 = function(){
+  if(this.roll === 1){
+    this.tempScore = 0;
+  }
+  else{
+    this.tempScore += this.roll
+  }
+}
+
+
 $(document).ready(function(){
   $('button#dieroll').click(function(event){
     var value = randomize();
