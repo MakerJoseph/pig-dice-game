@@ -15,7 +15,7 @@ function Player() {
 Player.prototype.roll1 = function() {
   if (this.roll === 1) {
     this.tempScore = 0;
-    alert("Oooops! you rolled a 1, it's next palyer's turn!")
+    alert("Oops! you rolled a 1, your turn is over!")
   } else {
     this.tempScore += this.roll;
   }
@@ -60,9 +60,19 @@ $(document).ready(function() {
       //player1 total scores
       $("button#hold1").click(function(event) {
         player1.hold();
-        $(".tot1").text(player1.totalScore)
+        $(".tot1").text(player1.totalScore);
         $(".roll1").empty();
         $(".temp1").empty();
+        player1.winnerCheck();
+      });
+
+      //player2 total scores
+      $("button#hold2").click(function(event) {
+        player2.hold();
+        $(".tot2").text(player2.totalScore)
+        $(".roll2").empty();
+        $(".temp2").empty();
+        player2.winnerCheck();
       });
 
 });
