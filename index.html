@@ -11,7 +11,8 @@
 
 <body>
   <div class="container">
-    <center><h1>PIG DICE</h1><h3>BY KaJose</h3></center>
+    <center><h1>PIG DICE</h1>
+    </center>
     <div class="">
       <h2>Rules of game:</h2>
       <ul>
@@ -21,11 +22,25 @@
         <li>First player to reach 100 wins!</li>
       </ul>
 
+      <form id="player-1">
+        <div class="form-group">
+          <label for="player1Name">Player 1 Name:</label>
+          <input required class="player1Name" type="text">
+        </div>
+      </form>
+      <form id="player-2">
+        <div class="form-group">
+          <label for="player2Name">Player 2 Name:</label>
+          <input required class="player2Name" type="text">
+        </div>
+      </form>
+      <button id="play-game" type="button" name="button">PLAY GAME</button>
     </div>
+
     <div class="row">
 
       <div class="col" id="play1">
-        <h1>Player 1 section</h1>
+        <h1>Player 1 <span id="name1"></span> </h1>
         <button type="button" name="button" id="dieroll1">Roll Die</button>
         <button type="button" name="button" id="hold1">Hold</button>
         <div class="values">
@@ -40,7 +55,7 @@
       </div>
 
       <div class="col" id="play2">
-        <h1>Player 2 section</h1>
+        <h1>Player 2 <span id="name2"></span> </h1>
         <button type="button" name="button" id="dieroll2">Roll Die</button>
         <button type="button" name="button" id="hold2">Hold</button>
         <div class="values">

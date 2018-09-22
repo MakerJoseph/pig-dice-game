@@ -5,7 +5,7 @@ var randomize = function() {
 
 //player constructor
 function Player() {
-  this.PlayerName;
+  this.playerName;
   this.roll = 0;
   this.tempScore = 0;
   this.totalScore = 0;
@@ -23,8 +23,8 @@ Player.prototype.roll1 = function() {
 
 //enables player to hold and let the other player play
 Player.prototype.hold = function() {
-  this.totalScore += this.tempSore;
-  this.tempSore = 0;
+  this.totalScore += this.tempScore;
+  this.tempScore = 0;
   alert("Your turn is over!")
 }
 
@@ -36,8 +36,19 @@ Player.prototype.winnerCheck = function() {
 }
 
 $(document).ready(function() {
-      var player1 = new Player("Player 1");
+      var player1 = new Player("Player 1");  //A new parameter for function Player
       var player2 = new Player("Player 2");
+
+      //display the players' name on the palyer section
+      $("button#play-game").click(function(event){
+        var player1Name = $(".player1Name").val();
+        var player2Name = $(".player2Name").val();
+
+        player1.playerName = player1Name;
+        player2.playerName = player2Name;
+        $("#name1").text(player1Name);
+        $("#name2").text(player2Name);
+      })
 
       //player1 temporary scores
       $("button#dieroll1").click(function(event) {

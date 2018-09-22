@@ -1,11 +1,11 @@
 body{
-  background-color: grey;
+  margin-top: 30px;
+
 }
 
 .container{
   background-color: #757c89;
 }
-
 
 #roll{
   font-weight: bold;
@@ -13,7 +13,7 @@ body{
 }
 
 #play1{
-
+  float: left;
 }
 
 #play2{
