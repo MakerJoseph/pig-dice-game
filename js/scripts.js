@@ -36,7 +36,7 @@ Player.prototype.winnerCheck = function() {
 }
 
 $(document).ready(function() {
-      var player1 = new Player("Player 1");  //A new parameter for function Player
+      var player1 = new Player("Player 1");  //A new parameter for the function Player
       var player2 = new Player("Player 2");
 
       //display the players' name on the palyer section
@@ -46,6 +46,7 @@ $(document).ready(function() {
 
         player1.playerName = player1Name;
         player2.playerName = player2Name;
+
         $("#name1").text(player1Name);
         $("#name2").text(player2Name);
       })
@@ -84,6 +85,18 @@ $(document).ready(function() {
         $(".roll2").empty();
         $(".temp2").empty();
         player2.winnerCheck();
+      });
+
+      //clear all values for a new GAME
+      $("button.refresh").click(function(event){
+        $(".roll1").empty();
+        $(".temp1").empty();
+        $(".tot1").empty();
+        $(".roll2").empty();
+        $(".temp2").empty();
+        $(".tot2").empty();
+        $(".player1Name").val("");
+        $(".player2Name").val("");
       });
 
 });
