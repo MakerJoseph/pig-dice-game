@@ -8,7 +8,7 @@ A player repeatedly rolls a die until either a 1 is rolled or the player decides
 ## Setup/Installation Requirements
 * Clone the repository from github
 * Open Chrome
-* Use the link
+* Use the link https://makerjoseph.github.io/pig-dice-game/
 * Enjoy the game
 
 ## Known Bugs

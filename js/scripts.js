@@ -97,6 +97,8 @@ $(document).ready(function() {
         $(".tot2").empty();
         $(".player1Name").val("");
         $(".player2Name").val("");
+        $("#name1").empty();
+        $("#name2").empty();
       });
 
 });
